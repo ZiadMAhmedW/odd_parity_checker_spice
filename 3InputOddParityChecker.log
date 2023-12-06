@@ -1,17 +1,17 @@
-Circuit: * D:\academic\AUC\Fall 2023\microelectronics\project\3InputOddParityChecker.asc
+Circuit: * Z:\home\ziad\AUC\Microelectronics\Project\odd_parity_checker_spice\3InputOddParityChecker.asc
 
 Limiting rise time of source v2 to 0.005
 Limiting fall time of source v2 to 0.005
-Model "nmos0p18": Oxide thickness thinner than recommended for a level 1 MOSFET.
-Instance "m1": Length shorter than recommended for a level 1 MOSFET.
-Instance "m1": Width narrower than recommended for a level 1 MOSFET.
 Model "pmos0p18": Oxide thickness thinner than recommended for a level 1 MOSFET.
 Instance "m2": Length shorter than recommended for a level 1 MOSFET.
 Instance "m2": Width narrower than recommended for a level 1 MOSFET.
+Model "nmos0p18": Oxide thickness thinner than recommended for a level 1 MOSFET.
+Instance "m1": Length shorter than recommended for a level 1 MOSFET.
+Instance "m1": Width narrower than recommended for a level 1 MOSFET.
 Direct Newton iteration for .op point succeeded.
 
-Date: Sat Dec  2 19:38:26 2023
-Total elapsed time: 0.190 seconds.
+Date: Wed Dec 06 16:30:38 2023
+Total elapsed time: 0.067 seconds.
 
 tnom = 27
 temp = 27
@@ -24,7 +24,6 @@ rejected = 220
 matrix size = 6
 fillins = 0
 solver = Normal
-Avg thread counts: 1.9/3.4/3.4/1.9
-Matrix Compiler1:      11 opcodes  0.2/[0.2]/0.2
-Matrix Compiler2: 408 bytes object code size  0.1/0.3/[0.1]
+Matrix Compiler1: 182 bytes object code size  1.2/1.2/[1.2]
+Matrix Compiler2: off  [1.1]/1.3/1.3
 
