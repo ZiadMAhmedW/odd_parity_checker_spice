@@ -1,0 +1,24 @@
+* D:\academic\AUC\Fall 2023\microelectronics\project\odd_parity_checker_spice\CMOS_0.5_INV_MinArea.asc
+M1 N005 N003 0 0 NMOS0P5 W=1.25u L=0.5u
+M2 N005 N003 N001 N001 PMOS0P5 W=1.25u L=0.5u
+V1 N001 0 3.3
+V2 N003 0 PULSE(0 3.3 0 0 0 50m 100m 1)
+R1 N007 N005 1k
+C1 0 N007 0.5p
+M3 N006 N004 0 0 NMOS0P5 W=1.25u L=0.5u
+M4 N006 N004 N002 N002 PMOS0P5 W=1.25u L=0.5u
+V3 N002 0 3.3
+VSWEEP N004 0 0
+R2 N008 N006 1k
+C2 0 N008 0.5p
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\ahmed\AppData\Local\LTspice\lib\cmp\standard.mos
+.lib "MOSFET_models_0p5_0p18.inc"
+;.tran 1
+.dc VSWEEP 0 3.3 0.01
+* MINIMUM AREA
+* CMOS INVERTER
+* MINIMUM AREA
+.backanno
+.end
